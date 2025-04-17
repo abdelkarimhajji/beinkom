@@ -8,6 +8,10 @@
     -ms-user-select: none;
     -webkit-user-drag: none;
     -moz-user-drag: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* #27AAE2 */
     
 }
 

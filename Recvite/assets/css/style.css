@@ -1775,12 +1775,12 @@ div#mCSB_1_container{
   line-height: 30px;
   line-height: 40px;
   font-weight: 700;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   height: 80px;
 }
 
 .light-icon {
-  color: #28aa4a;
+  color: #27AAE2;
   font-weight: 100;
   font-size: 50px;
   opacity: 0.8;
@@ -1795,7 +1795,7 @@ div#mCSB_1_container{
 
 .feature-block-one .inner-box .image-box img{
   width: 100%;
-  height: 110px;
+  height: 150px;
   object-fit: cover;
   object-position: 60% 20%;
   transition: all 500ms ease;
@@ -2102,6 +2102,7 @@ div#mCSB_1_container{
   overflow: hidden;
   background: #fff;
   box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  height: 550px;
 }
 
 .service-block-one .inner-box .image-box{
@@ -4792,6 +4793,10 @@ div#mCSB_1_container{
 }
 
 
+.jobs-beinkom
+{
+  margin-bottom: 50px;
+}
 /*** 
 
 ====================================================================
