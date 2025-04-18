@@ -70,3 +70,57 @@ creation.addEventListener('mouseleave', () => {
     Flesh_creation.style.visibility = "hidden"
     Flesh_creation.style.transition = "0s"   
 })
+
+
+
+
+
+
+//  lading page
+let bird = document.querySelector(".bird");
+let frame = 0;
+const frames = ["bird1", "bird2", "bird3", "bird4", "bird5", "bird6"]
+function animateBird() {
+  bird.style.backgroundImage = `url("assets/images/${frames[frame]}.png")`;
+
+
+  frame++;
+  if (frame > 5) {
+    frame = 0;
+  }
+
+  setTimeout(animateBird, 80); 
+}
+
+animateBird(); 
+
+
+
+
+let loading = document.querySelector(".loading")
+
+let minLoadTimePassed = false;
+let siteLoaded = false;
+
+
+setTimeout(function () {
+  minLoadTimePassed = true;
+  if (siteLoaded) hidePreloader();
+}, 2500);
+
+
+window.addEventListener("load", function () {
+  siteLoaded = true;
+  if (minLoadTimePassed) hidePreloader();
+});
+
+
+function hidePreloader() {
+  loading.style.transition = "0.4s";
+  loading.style.opacity = "0";
+
+  setTimeout(function () {
+    loading.style.display = "none";
+  }, 1000);
+}
+

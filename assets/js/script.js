@@ -3,11 +3,11 @@
 	"use strict";
 	
 	//Hide Loading Box (Preloader)
-	function handlePreloader() {
-		if($('.preloader').length){
-			$('.preloader').delay(200).fadeOut(500);
-		}
-	}
+	// function handlePreloader() {
+	// 	if($('.preloader').length){
+	// 		$('.preloader').delay(200).fadeOut(500);
+	// 	}
+	// }
 	
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
@@ -502,10 +502,10 @@
    When document is loaded, do
    ========================================================================== */
 	
-	$(window).on('load', function() {
-		handlePreloader();
-		enableMasonry();
-	});
+	// $(window).on('load', function() {
+	// 	handlePreloader();
+	// 	enableMasonry();
+	// });
 
 	
 

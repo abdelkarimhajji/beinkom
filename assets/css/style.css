@@ -3233,6 +3233,14 @@ div#mCSB_1_container{
   display: block;
   background: #1f1f1f;
   padding: 41px 30px 45px 115px;
+  height: 130px;
+}
+
+@media (max-width: 767px) {
+  .footer-top .footer-info .single-item .inner
+  {
+    height: auto;
+  }
 }
 
 .footer-top .footer-info .single-item .inner .icon-box{
