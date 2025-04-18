@@ -33,17 +33,54 @@
 
 .container-header #Dev{
     filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    will-change: filter;
+    transform: translateZ(0);
+     object-fit: none;
 }
 
 
 .container-header #Marketing {
     filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    will-change: filter;
+    transform: translateZ(0);
+     object-fit: none;
 }
 
 .container-header #impression_copie {
     filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    will-change: filter;
+    transform: translateZ(0);
+     object-fit: none;
 }
+
+.container-header #impression {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    will-change: filter;
+    transform: translateZ(0);
+     object-fit: none;
+}
+
 .container-header #Creation
 {
     filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    will-change: filter;
+    transform: translateZ(0);
+     object-fit: none;
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        #Dev {
+        filter: grayscale(100%) !important;
+        -webkit-filter: grayscale(100%) !important;
+        will-change: filter;
+        transform: translate3d(0, 0, 0); /* force GPU paint */
+      }
+    }
+  }
+  

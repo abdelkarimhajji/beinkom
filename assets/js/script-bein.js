@@ -6,10 +6,9 @@ let dev = document.getElementById("Dev");
 let marketing = document.getElementById("Marketing")
 let impression = document.getElementById("impression_copie")
 let creation = document.getElementById("Creation")
-
-
+let impression_shadow = document.getElementById("impression");
 Flesh_dev.style.visibility = "hidden"
-// Flesh_impression.style.visibility = "hidden"
+Flesh_impression.style.visibility = "hidden"
 Flesh_marketing.style.visibility = "hidden"
 Flesh_creation.style.visibility = "hidden"
 
@@ -17,7 +16,6 @@ Flesh_creation.style.visibility = "hidden"
 dev.addEventListener('mouseenter', () => {
     dev.style.filter = "grayscale(0%)"
     dev.style.transition = "0.2s"
-
     Flesh_dev.style.visibility = "visible"
     Flesh_dev.style.transition = "0.5s"
 })
@@ -34,7 +32,7 @@ marketing.addEventListener('mouseenter', () => {
     marketing.style.transition = "0.2s"
 
     Flesh_marketing.style.visibility = "visible"
-    Flesh_dev.marketing.transition = "0.5s"
+    Flesh_marketing.style.transition = "0.5s"
 })
 marketing.addEventListener('mouseleave', () => {
     marketing.style.filter = "grayscale(100%)"
@@ -47,12 +45,13 @@ marketing.addEventListener('mouseleave', () => {
 impression.addEventListener('mouseenter', () => {
     impression.style.filter = "grayscale(0%)"
     impression.style.transition = "0.2s"
-
+    impression_shadow.style.filter = "grayscale(0%)"
     Flesh_impression.style.visibility = "visible"
-    Flesh_dev.impression.transition = "0.5s"
+    Flesh_impression.style.transition = "0.5s"
 })
 impression.addEventListener('mouseleave', () => {
     impression.style.filter = "grayscale(100%)"
+     impression_shadow.style.filter = "grayscale(100%)"
     Flesh_impression.style.visibility = "hidden"
     Flesh_impression.style.transition = "0s"   
 })
@@ -64,12 +63,10 @@ creation.addEventListener('mouseenter', () => {
     creation.style.transition = "0.2s"
 
     Flesh_creation.style.visibility = "visible"
-    Flesh_dev.creation.transition = "0.5s"
+    Flesh_creation.style.transition = "0.5s"
 })
 creation.addEventListener('mouseleave', () => {
     creation.style.filter = "grayscale(100%)"
     Flesh_creation.style.visibility = "hidden"
     Flesh_creation.style.transition = "0s"   
 })
-
-

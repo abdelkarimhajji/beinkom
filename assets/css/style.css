@@ -222,7 +222,24 @@ img {
   transition-duration: .7s;
   transition-property: all;
 }
-
+.sticky-header .logo
+{
+  width: 250px !important;
+}
+/* 1250 */
+@media (max-width: 1250px) {
+  .sticky-header .logo {
+    position: relative;
+    width: 200px !important;
+  }
+}
+/* 1200 */
+@media (max-width: 1200px) {
+  .sticky-header .logo {
+    position: relative;
+    width: 150px !important;
+  }
+}
 /** button **/
 
 .theme-btn-one{
@@ -251,7 +268,9 @@ img {
   transition: all 500ms ease;
   color: #272727 !important;
 }
-
+.theme-btn-one:hover {
+  color: #272727 !important; 
+}
 .theme-btn-one:hover:before{
   width: 100%;
   background-color: white;
@@ -602,7 +621,6 @@ img {
 }
 
 .main-header .sticky-header .theme-btn-one:before{
-  background: #fff;
 }
 
 .main-header .sticky-header .theme-btn-one:hover{
@@ -810,12 +828,12 @@ img {
 .main-header.style-one .main-menu .navigation > li > a:before{
   position: absolute;
   content: '';
-  background: url(../images/shape/shape-1.png);
+  background: url(../images/SMOL-LINE-UP.png);
   width: 62px;
   height: 8px;
   left: 50%;
   transform: translateX(-50%) scale(0,0);
-  bottom: -34px;
+  bottom: -33px;
   background-repeat: no-repeat;
   transition: all 500ms ease;
 }
@@ -2252,7 +2270,7 @@ div#mCSB_1_container{
 .service-block-one .inner-box .lower-content .link a:before {
   position: absolute;
   content: '';
-  background: url(../images/shape/shape-2.png);
+  background: url(../images/SMOL-LINE-DOWN.png);
   width: 76px;
   height: 8px;
   left: 50%;
@@ -2376,7 +2394,7 @@ div#mCSB_1_container{
 .content_block_3 .content-box .tab-btn-box .tab-btns li:after{
   position: absolute;
   content: '';
-  background: url(../images/shape/shape-3.png);
+  background: url(../images/BIG-LINE-UP.png);
   width: 154px;
   height: 8px;
   left: 50%;
